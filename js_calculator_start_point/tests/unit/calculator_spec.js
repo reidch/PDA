@@ -23,4 +23,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 2);
   })
 
+  it('should be able to multiply', function(){
+    calculator.previousTotal = 10;
+    calculator.multiply(8);
+    assert.equal(calculator.runningTotal, 80);
+  })
+
 });
