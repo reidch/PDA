@@ -35,4 +35,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 8);
   })
 
+  it('should reset the newTotal when a number is clicked', function(){
+    calculator.runningTotal = 10;
+    calculator.numberClick(4);
+    assert.equal(calculator.runningTotal, 4)
+  })
+
 });
