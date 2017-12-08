@@ -90,7 +90,4 @@ describe('calculator', function () {
     calculator.clearClick();
     assert.equal(calculator.runningTotal, 0);
   })
-
-
-
 });
